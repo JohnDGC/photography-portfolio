@@ -35,9 +35,9 @@ interface PortfolioGalleryProps {
 }
 
 export function PortfolioGallery({
-  title = "Browse the archive",
+  title = "Explora mi archivo",
   archiveButton = {
-    text: "View gallery",
+    text: "Ver galería",
     href: "#gallery"
   },
   images: customImages,

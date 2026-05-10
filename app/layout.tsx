@@ -5,18 +5,21 @@ import { photographer } from "@/lib/portfolio"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: `${photographer.name} | Professional Photographer Portfolio`,
+  title: `${photographer.name} | Fotógrafo Profesional`,
   description: photographer.tagline,
   keywords: [
-    "professional photographer",
-    "wedding photography",
-    "portrait photography",
-    "editorial photography",
-    "destination photographer"
+    "fotógrafo profesional",
+    "fotografía de bodas",
+    "fotografía de retratos",
+    "fotografía editorial",
+    "fotógrafo en Colombia",
+    "quinceañeras",
+    "fotografía Bogotá",
+    "fotografía Medellín"
   ],
   authors: [{ name: photographer.name }],
   openGraph: {
-    title: `${photographer.name} | Professional Photographer Portfolio`,
+    title: `${photographer.name} | Fotógrafo Profesional`,
     description: photographer.tagline,
     type: "website",
     images: [
@@ -24,13 +27,13 @@ export const metadata: Metadata = {
         url: photographer.profileImage,
         width: 1400,
         height: 933,
-        alt: `Portrait of ${photographer.name}`
+        alt: `Fotografía de perfil de ${photographer.name}`
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: `${photographer.name} | Professional Photographer Portfolio`,
+    title: `${photographer.name} | Fotógrafo Profesional`,
     description: photographer.tagline,
     images: [photographer.profileImage]
   }
@@ -38,7 +41,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>{children}</body>
     </html>
   )

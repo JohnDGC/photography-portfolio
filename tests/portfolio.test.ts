@@ -12,10 +12,10 @@ describe("portfolio data helpers", () => {
   })
 
   it("filters portfolio items by category", () => {
-    const portraits = filterPortfolioItems(portfolioItems, "Portraits")
+    const portraits = filterPortfolioItems(portfolioItems, "Retratos")
 
     expect(portraits.length).toBeGreaterThan(0)
-    expect(portraits.every((item) => item.category === "Portraits")).toBe(true)
+    expect(portraits.every((item) => item.category === "Retratos")).toBe(true)
   })
 
   it("finds the featured hero image", () => {

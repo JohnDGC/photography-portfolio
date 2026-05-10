@@ -32,10 +32,10 @@ import {
 } from "@/lib/portfolio"
 
 const navItems = [
-  { label: "Work", href: "#gallery" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" }
+  { label: "Portafolio", href: "#gallery" },
+  { label: "Sobre mí", href: "#about" },
+  { label: "Servicios", href: "#services" },
+  { label: "Contacto", href: "#contact" }
 ]
 
 const fadeUp = {
@@ -95,7 +95,7 @@ export function PortfolioExperience() {
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    setFormStatus("Thanks. Your inquiry is ready for follow-up within one business day.")
+    setFormStatus("¡Gracias! Tu consulta ha sido recibida. Te responderé dentro de un día hábil.")
     event.currentTarget.reset()
   }
 
@@ -131,8 +131,8 @@ export function PortfolioExperience() {
     image: photographer.profileImage,
     email: photographer.email,
     telephone: photographer.phone,
-    areaServed: "Worldwide",
-    serviceType: ["Wedding photography", "Portrait photography", "Editorial photography", "Product photography"]
+    areaServed: "Colombia y el mundo",
+    serviceType: ["Fotografía de bodas", "Fotografía de retratos", "Fotografía editorial", "Fotografía de quinceañera"]
   }
 
   return (
@@ -143,7 +143,7 @@ export function PortfolioExperience() {
       <section id="home" className="relative min-h-screen overflow-hidden">
         <img
           src={photographer.profileImage}
-          alt={`Portrait of photographer ${photographer.name}`}
+          alt={`Fotografía de perfil de ${photographer.name}`}
           className="absolute inset-0 h-full w-full object-cover object-[58%_center]"
           fetchPriority="high"
           decoding="async"
@@ -174,16 +174,16 @@ export function PortfolioExperience() {
             <motion.div variants={fadeUp} className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a
                 href="#gallery"
-                className="group inline-flex items-center justify-center gap-3 rounded-md bg-paper px-6 py-4 text-sm font-bold text-ink transition hover:bg-champagne"
+                className="group inline-flex items-center justify-center gap-3 rounded-md bg-[#f4eee2] px-6 py-4 text-sm font-bold text-[#080705] transition hover:bg-[#d7b46a]"
               >
-                View portfolio
+                Ver portafolio
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a
                 href="#contact"
                 className="inline-flex items-center justify-center gap-3 rounded-md border border-white/20 px-6 py-4 text-sm font-bold text-paper transition hover:border-champagne hover:text-champagne"
               >
-                Book a commission
+                Reservar sesión
               </a>
             </motion.div>
           </motion.div>
@@ -194,9 +194,9 @@ export function PortfolioExperience() {
             transition={{ delay: 0.75, duration: 0.6 }}
             className="mt-14 grid max-w-3xl grid-cols-3 gap-4 border-t border-white/14 pt-6 text-paper/80"
           >
-            <HeroStat value="12+" label="Years behind the camera" />
-            <HeroStat value="38" label="Destination commissions" />
-            <HeroStat value="72h" label="Preview gallery delivery" />
+            <HeroStat value="8+" label="Años detrás del lente" />
+            <HeroStat value="150+" label="Bodas y eventos cubiertos" />
+            <HeroStat value="72h" label="Vista previa de galería" />
           </motion.div>
         </div>
       </section>
@@ -204,9 +204,9 @@ export function PortfolioExperience() {
       <section id="gallery" className="relative px-5 py-24 sm:px-8 lg:px-10">
         <div className="mx-auto max-w-7xl">
           <SectionIntro
-            eyebrow="Portfolio"
-            title="A visual library shaped by light, restraint, and atmosphere."
-            description="Browse selected commissions across weddings, portraits, editorial stories, landscapes, and commercial work."
+            eyebrow="Portafolio"
+            title="Una biblioteca visual moldeada por la luz, la emoción y la atmósfera."
+            description="Explora una selección de bodas, retratos, quinceañeras, editorial y paisajes colombianos."
           />
 
           <div className="mt-10 flex flex-wrap gap-2" role="tablist" aria-label="Portfolio categories">
@@ -275,8 +275,8 @@ export function PortfolioExperience() {
       </section>
 
       <PortfolioGallery
-        title="Selected frames in motion"
-        archiveButton={{ text: "Start a project", href: "#contact" }}
+        title="Momentos seleccionados en movimiento"
+        archiveButton={{ text: "Iniciar un proyecto", href: "#contact" }}
         images={portfolioGalleryImages}
         className="bg-[#100f0d]"
         maxHeight={150}
@@ -295,14 +295,14 @@ export function PortfolioExperience() {
           >
             <img
               src={photographer.heroImage}
-              alt={`Camera and studio detail for ${photographer.name}`}
+              alt={`Detalle de cámara y estudio de ${photographer.name}`}
               className="aspect-[4/5] w-full object-cover"
               loading="lazy"
               decoding="async"
             />
             <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(8,7,5,0.72),rgba(8,7,5,0.02))]" />
             <p className="absolute bottom-5 left-5 max-w-xs text-sm leading-6 text-paper/78">
-              Featured image: {featuredItem.title}, {featuredItem.location}
+              Imagen destacada: {featuredItem.title}, {featuredItem.location}
             </p>
           </motion.div>
 
@@ -313,10 +313,10 @@ export function PortfolioExperience() {
             transition={{ staggerChildren: 0.1 }}
           >
             <motion.p variants={fadeUp} className="text-sm font-bold uppercase text-champagne">
-              About me
+              Sobre mí
             </motion.p>
             <motion.h2 variants={fadeUp} className="mt-4 font-serif text-5xl font-semibold leading-none md:text-6xl">
-              Photographs with the patience of film and the clarity of modern editorial work.
+              Fotografío con la paciencia del cine analógico y la claridad del editorial moderno.
             </motion.h2>
             <motion.p variants={fadeUp} className="mt-8 text-lg leading-8 text-paper/74">
               {photographer.bio}
@@ -326,9 +326,9 @@ export function PortfolioExperience() {
             </motion.p>
             <motion.div variants={fadeUp} className="mt-10 grid gap-5 sm:grid-cols-3">
               {[
-                ["Light", "Natural-first, shaped only when the frame needs it."],
-                ["Pace", "Gentle direction with space for real movement."],
-                ["Finish", "Warm tones, clean skin, and restrained contrast."]
+                ["Luz", "Natural primero, modulada solo cuando el encuadre lo necesita."],
+                ["Ritmo", "Dirección suave con espacio para el movimiento genuino."],
+                ["Acabado", "Tonos cálidos, piel limpia y contraste contenido."]
               ].map(([label, text]) => (
                 <div key={label} className="border-t border-white/14 pt-4">
                   <h3 className="font-serif text-2xl font-semibold text-paper">{label}</h3>
@@ -343,9 +343,9 @@ export function PortfolioExperience() {
       <section id="services" className="border-y border-white/10 bg-[#12100d] px-5 py-24 sm:px-8 lg:px-10">
         <div className="mx-auto max-w-7xl">
           <SectionIntro
-            eyebrow="Services"
-            title="Clear packages for portrait, wedding, and campaign work."
-            description="Each commission includes planning, direction, retouching, and a private delivery gallery. Custom quotes are available for travel and multi-day productions."
+            eyebrow="Servicios"
+            title="Paquetes claros para retratos, bodas, quinceañeras y campañas."
+            description="Cada sesión incluye planeación, dirección, retoque y galería privada de entrega. Cotizaciones personalizadas disponibles para viajes y producciones de varios días."
           />
 
           <div className="mt-12 grid gap-4 lg:grid-cols-3">
@@ -380,7 +380,7 @@ export function PortfolioExperience() {
       <section className="px-5 py-24 sm:px-8 lg:px-10" aria-labelledby="testimonials-title">
         <div className="mx-auto max-w-7xl">
           <h2 id="testimonials-title" className="font-serif text-5xl font-semibold leading-none md:text-6xl">
-            Notes from recent clients
+            Palabras de clientes recientes
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             {testimonials.map((testimonial) => (
@@ -400,9 +400,9 @@ export function PortfolioExperience() {
       <section id="contact" className="relative px-5 py-24 sm:px-8 lg:px-10">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="text-sm font-bold uppercase text-champagne">Contact</p>
+            <p className="text-sm font-bold uppercase text-champagne">Contacto</p>
             <h2 className="mt-4 font-serif text-5xl font-semibold leading-none md:text-7xl">
-              Tell me what you want the photographs to remember.
+              Cuéntame qué quieres que las fotografías recuerden.
             </h2>
             <div className="mt-9 space-y-5 text-paper/75">
               <a className="flex items-center gap-3 transition hover:text-champagne" href={`mailto:${photographer.email}`}>
@@ -437,48 +437,48 @@ export function PortfolioExperience() {
           <form onSubmit={handleSubmit} className="rounded-md border border-white/10 bg-white/[0.035] p-5 sm:p-7">
             <div className="grid gap-4 sm:grid-cols-2">
               <label className="space-y-2 text-sm font-bold text-paper/78">
-                Name
+                Nombre
                 <input
                   name="name"
                   required
                   className="w-full rounded-md border border-white/10 bg-black/24 px-4 py-3 text-paper placeholder:text-paper/35"
-                  placeholder="Your name"
+                  placeholder="Tu nombre"
                 />
               </label>
               <label className="space-y-2 text-sm font-bold text-paper/78">
-                Email
+                Correo
                 <input
                   name="email"
                   type="email"
                   required
                   className="w-full rounded-md border border-white/10 bg-black/24 px-4 py-3 text-paper placeholder:text-paper/35"
-                  placeholder="you@example.com"
+                  placeholder="tu@correo.com"
                 />
               </label>
             </div>
             <label className="mt-4 block space-y-2 text-sm font-bold text-paper/78">
-              Project type
+              Tipo de proyecto
               <input
                 name="project"
                 className="w-full rounded-md border border-white/10 bg-black/24 px-4 py-3 text-paper placeholder:text-paper/35"
-                placeholder="Wedding, portrait, campaign, travel..."
+                placeholder="Boda, retrato, campaña, quinceañera..."
               />
             </label>
             <label className="mt-4 block space-y-2 text-sm font-bold text-paper/78">
-              Message
+              Mensaje
               <textarea
                 name="message"
                 required
                 rows={6}
                 className="w-full resize-none rounded-md border border-white/10 bg-black/24 px-4 py-3 text-paper placeholder:text-paper/35"
-                placeholder="Share your date, location, mood, and what matters most."
+                placeholder="Cuéntame tu fecha, locación, ambiente y lo que más importa."
               />
             </label>
             <button
               type="submit"
               className="mt-5 inline-flex w-full items-center justify-center gap-3 rounded-md bg-champagne px-6 py-4 text-sm font-bold text-ink transition hover:bg-paper"
             >
-              Send inquiry
+              Enviar consulta
               <Send className="h-4 w-4" />
             </button>
             {formStatus ? <p className="mt-4 text-sm text-moss">{formStatus}</p> : null}
@@ -488,9 +488,9 @@ export function PortfolioExperience() {
 
       <footer className="border-t border-white/10 px-5 py-8 text-sm text-paper/52 sm:px-8 lg:px-10">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <p>{photographer.name} / Professional photography portfolio</p>
+          <p>{photographer.name} / Portafolio profesional de fotografía</p>
           <a href="#home" className="transition hover:text-champagne">
-            Back to top
+            Volver arriba
           </a>
         </div>
       </footer>
@@ -527,7 +527,7 @@ function SiteHeader({
         </div>
         <button
           type="button"
-          aria-label="Toggle navigation"
+          aria-label="Abrir o cerrar menú de navegación"
           className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/14 text-paper md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >

@@ -1,4 +1,4 @@
-export type PortfolioCategory = "All" | "Weddings" | "Portraits" | "Editorial" | "Landscapes" | "Product"
+export type PortfolioCategory = "All" | "Bodas" | "Retratos" | "Editorial" | "Paisajes" | "XV Años"
 
 export interface PortfolioItem {
   id: string
@@ -20,118 +20,118 @@ export interface ServicePackage {
 }
 
 export const photographer = {
-  name: "Arielle Vale",
-  tagline: "Editorial wedding, portrait, and destination photography with cinematic restraint.",
-  location: "Available worldwide from Lisbon",
-  email: "hello@ariellevale.studio",
-  phone: "+351 912 000 884",
+  name: "Carlos Alvarez",
+  tagline: "Cuento historias eternas con imágenes. Bodas, XV años, eventos y fotografía de estudio con alma colombiana.",
+  location: "Disponible en toda Colombia y el mundo",
+  email: "hola@carlosalvarez.foto",
+  phone: "+57 300 000 0000",
   profileImage:
-    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1400&q=82",
+    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1400&q=82",
   heroImage:
     "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=2200&q=82",
   bio:
-    "I create quiet, emotionally precise photographs for people who value atmosphere as much as documentation. My work blends natural light, editorial composition, and a documentary sense of timing so each gallery feels intimate, cinematic, and alive.",
+    "Creo fotografías que capturan lo que las palabras no alcanzan a decir. Mi trabajo combina la luz natural, la composición editorial y el instinto documental para que cada galería se sienta íntima, cinematográfica y completamente tuya.",
   approach:
-    "Every commission begins with listening. I plan carefully, direct lightly, and leave room for the unscripted gestures that make images feel personal instead of performed."
+    "Cada sesión comienza escuchando. Planifico con cuidado, dirijo con suavidad y dejo espacio para los gestos espontáneos que hacen que una imagen se sienta real, no ensayada."
 }
 
 export const socialLinks = [
-  { label: "Instagram", href: "https://instagram.com/" },
-  { label: "Behance", href: "https://behance.net/" },
-  { label: "Pinterest", href: "https://pinterest.com/" }
+  { label: "Instagram", href: "https://www.instagram.com/carlosalvarez_photo/" },
+  { label: "Facebook", href: "https://facebook.com/" },
+  { label: "WhatsApp", href: "https://wa.me/573000000000" }
 ]
 
-export const portfolioCategories: PortfolioCategory[] = ["All", "Weddings", "Portraits", "Editorial", "Landscapes", "Product"]
+export const portfolioCategories: PortfolioCategory[] = ["All", "Bodas", "Retratos", "Editorial", "Paisajes", "XV Años"]
 
 export const portfolioItems: PortfolioItem[] = [
   {
-    id: "coastal-vows",
-    title: "Coastal Vows",
-    category: "Weddings",
+    id: "votos-en-cartagena",
+    title: "Votos en Cartagena",
+    category: "Bodas",
     src: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1300&q=82",
-    alt: "Newly married couple embracing on a windy coastline",
-    location: "Comporta, Portugal",
+    alt: "Pareja recién casada en las murallas de Cartagena al atardecer",
+    location: "Cartagena, Colombia",
     year: "2026",
     featured: true,
     orientation: "tall"
   },
   {
-    id: "atelier-portrait",
-    title: "Atelier Portrait",
-    category: "Portraits",
+    id: "retrato-en-el-estudio",
+    title: "Retrato en el Estudio",
+    category: "Retratos",
     src: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1300&q=82",
-    alt: "Editorial portrait of a woman in soft window light",
-    location: "Paris, France",
+    alt: "Retrato editorial de una mujer con luz suave de ventana",
+    location: "Bogotá, Colombia",
     year: "2025",
     orientation: "wide"
   },
   {
-    id: "desert-line",
-    title: "Desert Line",
-    category: "Landscapes",
+    id: "amanecer-en-los-andes",
+    title: "Amanecer en los Andes",
+    category: "Paisajes",
     src: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1300&q=82",
-    alt: "Open desert landscape with warm evening light",
-    location: "Marrakesh, Morocco",
+    alt: "Paisaje andino con luz dorada al amanecer",
+    location: "Boyacá, Colombia",
     year: "2025",
     orientation: "wide"
   },
   {
-    id: "table-study",
-    title: "Table Study",
-    category: "Product",
+    id: "quinceanera-medellin",
+    title: "Quinceañera en Medellín",
+    category: "XV Años",
     src: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1300&q=82",
-    alt: "Minimal product photograph of a watch on a neutral surface",
-    location: "Studio",
+    alt: "Sesión de quinceañera con vestido elegante en estudio",
+    location: "Medellín, Colombia",
     year: "2026",
     orientation: "square"
   },
   {
-    id: "midnight-editorial",
-    title: "Midnight Editorial",
+    id: "editorial-nocturno",
+    title: "Editorial Nocturno",
     category: "Editorial",
     src: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1300&q=82",
-    alt: "Moody editorial portrait with dramatic studio light",
-    location: "Milan, Italy",
+    alt: "Retrato editorial dramático con iluminación de estudio",
+    location: "Bogotá, Colombia",
     year: "2025",
     orientation: "tall"
   },
   {
-    id: "garden-ceremony",
-    title: "Garden Ceremony",
-    category: "Weddings",
+    id: "boda-en-hacienda",
+    title: "Boda en Hacienda",
+    category: "Bodas",
     src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1300&q=82",
-    alt: "Outdoor wedding ceremony surrounded by greenery",
-    location: "Sintra, Portugal",
+    alt: "Ceremonia de boda al aire libre rodeada de vegetación tropical",
+    location: "Valle del Cauca, Colombia",
     year: "2026",
     orientation: "wide"
   },
   {
-    id: "studio-silhouette",
-    title: "Studio Silhouette",
-    category: "Portraits",
+    id: "silueta-en-estudio",
+    title: "Silueta en Estudio",
+    category: "Retratos",
     src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1300&q=82",
-    alt: "Close portrait with sculptural lighting and neutral styling",
-    location: "Lisbon, Portugal",
+    alt: "Retrato íntimo con iluminación escultórica y estilo neutro",
+    location: "Cali, Colombia",
     year: "2025",
     orientation: "square"
   },
   {
-    id: "alpine-stillness",
-    title: "Alpine Stillness",
-    category: "Landscapes",
+    id: "sierra-nevada",
+    title: "Sierra Nevada",
+    category: "Paisajes",
     src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1300&q=82",
-    alt: "Mountain lake beneath dramatic alpine peaks",
-    location: "Dolomites, Italy",
+    alt: "Lago de montaña bajo picos imponentes de la Sierra Nevada",
+    location: "Santa Marta, Colombia",
     year: "2024",
     orientation: "tall"
   },
   {
-    id: "fragrance-campaign",
-    title: "Fragrance Campaign",
-    category: "Product",
+    id: "quinceanera-bogota",
+    title: "Quinceañera Bogotá",
+    category: "XV Años",
     src: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=1300&q=82",
-    alt: "Luxury fragrance bottle photographed with warm highlights",
-    location: "Studio",
+    alt: "Sesión de quinceañera con detalles dorados y luz cálida",
+    location: "Bogotá, Colombia",
     year: "2026",
     orientation: "wide"
   }
@@ -139,37 +139,61 @@ export const portfolioItems: PortfolioItem[] = [
 
 export const servicePackages: ServicePackage[] = [
   {
-    name: "Portrait Session",
-    price: "$650",
-    description: "A focused session for personal branding, artists, founders, and refined editorial portraits.",
-    features: ["90-minute shoot", "Two looks or locations", "35 edited images", "Private online gallery"]
+    name: "Sesión de Retratos",
+    price: "$800.000 COP",
+    description: "Sesión enfocada para marcas personales, artistas, empresarios y retratos editoriales refinados.",
+    features: ["Sesión de 90 minutos", "Dos looks o locaciones", "35 imágenes editadas", "Galería privada en línea"]
   },
   {
-    name: "Wedding Story",
-    price: "$4,800",
-    description: "Full-day coverage shaped around atmosphere, family, movement, and the quiet in-between frames.",
-    features: ["8 hours coverage", "Timeline consultation", "500+ edited images", "Preview gallery in 72 hours"]
+    name: "Historia de Boda",
+    price: "$4.500.000 COP",
+    description: "Cobertura de día completo moldeada alrededor de la atmósfera, la familia, el movimiento y los momentos íntimos.",
+    features: ["8 horas de cobertura", "Consulta de cronograma", "500+ imágenes editadas", "Vista previa en 72 horas"]
   },
   {
-    name: "Brand Campaign",
-    price: "$2,400",
-    description: "Visual direction and photography for product launches, hospitality brands, and creative teams.",
-    features: ["Creative planning call", "Half-day production", "Usage-ready image set", "Commercial license"]
+    name: "Quinceañera Completa",
+    price: "$2.800.000 COP",
+    description: "Cobertura integral para celebraciones de quinceañera: sesión previa, ceremonia y recepción con entrega premium.",
+    features: ["Sesión previa incluida", "Ceremonia y recepción", "300+ imágenes editadas", "Álbum digital de regalo"]
+  },
+  {
+    name: "Fotografía Familiar",
+    price: "$600.000 COP",
+    description: "Sesión cálida y natural para familias que quieren preservar momentos auténticos con un toque artístico.",
+    features: ["Sesión de 60 minutos", "Locación a elección", "25 imágenes editadas", "Galería privada en línea"]
+  },
+  {
+    name: "Campaña de Marca",
+    price: "$3.200.000 COP",
+    description: "Dirección visual y fotografía para lanzamientos de productos, marcas de hospitalidad y equipos creativos.",
+    features: ["Llamada de planeación creativa", "Medio día de producción", "Imágenes listas para uso comercial", "Licencia comercial incluida"]
+  },
+  {
+    name: "Evento Corporativo",
+    price: "$1.500.000 COP",
+    description: "Cobertura profesional de eventos empresariales, conferencias, lanzamientos y celebraciones corporativas.",
+    features: ["Hasta 4 horas de cobertura", "Entrega en 5 días hábiles", "150+ imágenes editadas", "Derechos de uso empresarial"]
   }
 ]
 
 export const testimonials = [
   {
     quote:
-      "Arielle made the whole day feel calm and intentional. The images look like us, only more cinematic than we knew our life could feel.",
-    name: "Marina & Theo",
-    role: "Wedding clients"
+      "Carlos hizo que todo el día se sintiera tranquilo e intencional. Las imágenes nos representan perfectamente, solo que más cinematográficas de lo que pensábamos que nuestra vida podría verse.",
+    name: "Valentina y Sebastián",
+    role: "Clientes de boda"
   },
   {
     quote:
-      "The campaign library gave our launch a complete visual language. Every frame felt precise, warm, and commercially useful.",
-    name: "Elena Costa",
-    role: "Creative director, Noema"
+      "Las fotos de la quinceañera de mi hija superaron todas nuestras expectativas. Carlos tiene un don para capturar la emoción genuina en cada momento.",
+    name: "Lorena Gómez",
+    role: "Madre de quinceañera"
+  },
+  {
+    quote:
+      "El portafolio visual que creó para nuestra marca le dio a nuestro lanzamiento un lenguaje completo. Cada imagen fue precisa, cálida y comercialmente efectiva.",
+    name: "Andrés Morales",
+    role: "Director creativo, Estudio Nómada"
   }
 ]
 
