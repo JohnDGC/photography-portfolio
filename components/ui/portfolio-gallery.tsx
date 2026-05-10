@@ -103,7 +103,7 @@ export function PortfolioGallery({
 
           <Link
             href={archiveButton.href}
-            className="group mb-20 inline-flex items-center gap-3 rounded-full bg-foreground px-6 py-3 font-medium text-background transition-colors hover:bg-foreground/90"
+            className="group mb-20 inline-flex items-center gap-3 rounded-full bg-[#f4eee2] px-6 py-3 font-medium text-[#080705] shadow-lg shadow-black/20 ring-1 ring-white/10 transition-colors hover:bg-[#d7b46a] hover:text-[#080705] hover:ring-white/20"
           >
             <span>{archiveButton.text}</span>
             <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
