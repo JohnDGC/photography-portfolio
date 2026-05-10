@@ -3,7 +3,6 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
-import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 
@@ -101,13 +100,14 @@ export function PortfolioGallery({
         <div className="relative z-10 px-8 pb-8 pt-16 text-center">
           <h2 className="mb-8 text-balance text-4xl font-bold text-foreground md:text-6xl">{title}</h2>
 
-          <Link
+          <a
             href={archiveButton.href}
-            className="group mb-20 inline-flex items-center gap-3 rounded-full bg-[#f4eee2] px-6 py-3 font-medium text-[#080705] shadow-lg shadow-black/20 ring-1 ring-white/10 transition-colors hover:bg-[#d7b46a] hover:text-[#080705] hover:ring-white/20"
+            className="group mb-20 inline-flex items-center gap-3 rounded-full px-6 py-3 font-medium shadow-lg shadow-black/20 ring-1 ring-white/10 transition-colors hover:ring-white/20"
+            style={{ backgroundColor: "#080705", color: "#f4eee2" }}
           >
             <span>{archiveButton.text}</span>
             <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-          </Link>
+          </a>
         </div>
 
         <div className="relative -mb-[200px] hidden h-[400px] overflow-hidden md:block">
