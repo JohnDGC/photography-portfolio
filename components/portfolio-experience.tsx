@@ -174,7 +174,7 @@ export function PortfolioExperience() {
             <motion.div variants={fadeUp} className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a
                 href="#gallery"
-                className="group inline-flex items-center justify-center gap-3 rounded-md bg-[#f4eee2] px-6 py-4 text-sm font-bold text-[#080705] transition hover:bg-[#d7b46a]"
+                className="group inline-flex items-center justify-center gap-3 rounded-md bg-[#080705] px-6 py-4 text-sm font-bold text-[#f4eee2] shadow-lg shadow-black/20 ring-1 ring-white/10 transition hover:bg-[#15110f] hover:text-[#f4eee2] hover:ring-white/20"
               >
                 Ver portafolio
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
